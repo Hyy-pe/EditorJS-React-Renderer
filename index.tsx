@@ -37,14 +37,14 @@ import LinkToolOutput from './renderers/linkTool/index';
 import PersonalityOutput from './renderers/personality/index';
 //#endregion
 
-const Output = ({ data, style, classNames, config, renderers }: ErrOutputProps) => {
+const Output = ({ data, style, classNames, config, renderers }: any) => {
   if (!data || typeof data !== 'object') return '';
   if (!style || typeof style !== 'object') style = {};
   if (!classNames || typeof classNames !== 'object') classNames = {};
   if (!config || typeof config !== 'object') config = {};
   if (!renderers || typeof renderers !== 'object') renderers = {};
 
-  return data.blocks.map((block, i) => {
+  return data.blocks.map((block: any, i: any) => {
     let Renderer = null;
 
     switch (block.type.toLowerCase()) {
