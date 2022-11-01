@@ -1,10 +1,6 @@
 {
   "name": "editorjs-react-renderer",
-<<<<<<< HEAD
-  "version": "3.2.1",
-=======
   "version": "3.4.0",
->>>>>>> 41eecd1cb784a22df624662b06a0074dd8ae0f23
   "license": "ISC",
   "description": "A library for rendering styled, responsive and flexible React components from block style data objects",
   "keywords": [
